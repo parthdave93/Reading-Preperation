@@ -1,5 +1,7 @@
 # Java Concepts
+
 #### OOPS Concept
+
 OPPS concepts are abstraction, encapsulation, inheritance, polymorphism.
 Abstraction is defined as simple things to represent complexity, like mobile phones operating system. You know how to get things done using phone but you dont know how OS or hardware itself works that simply is an abstraction.
 Encapsulation is defined as wrapping up the data in a single unit or entity known as class. Class itself represent encapsulation because it holds fields and methods in a single unit.
@@ -16,20 +18,26 @@ void functionOverload(int a , int b){
 Things to note here in method overloading means method will having same name and same return types with different range of paramters.
 
 ---
+
 #
 #### Access modifiers
+
 Kotlin has a little different set of modifiers than java.
 Java has private, protected, public,default(package-private).
 Kotlin has private,protected, public , internal.
 Default modifier for java is default i.e. package private means that any class that is inside that package can able to acceess the class defiend, while in kotlin it;s by default public any one can access it anywhere.
 Quesions might rise are:
+
 | Questions | links |
 | ---- | ---- |
 | 1 |  [Kotlin-Visibility-Modifiers] - for more details | 
 | 2 | [Why not able to use protected modifier for top level class?] - or sometimes interviewer asks about what are the top level access modifiers by all means it is default, private, public. |
+
 ---
+
 #
 #### Interfaces
+
 Interfaces are delightful structure for the developers to help multiple languages to support multilevel inheritence. Like in java if we need to have a class inherit two classes it's not possible due to ambiguous operation and so we have interface to rescue.
 All fields in interface are ```public static final``` i.e. they are constants , and so it wont change.
 Interviewer might ask you what will be the output of following code:
@@ -84,11 +92,14 @@ So question might rise then how can you call individual interface default method
 ```A.super.samePrintMethod();``` and ```B.super.samePrintMethod();``` for calling individual methods of same class.
 
 Quesions might rise are:
+
 | Questions | links |
 | ---- | ---- |
 | 1 | [Why java does not support multiple inheritence] - for more details |
 | 2 | [default function in interface] - although java default functions where introduced in Java8 still it is worth to learn for mobile developers as there might time comes to introduce new function in interface without breaking old implemented code. |
+
 ---
+
 #
 #### Casting
 Many times you have casted classes or objects or even cast has been done by compiler itself in order to give you best result. Casting is kind of telling machine that I know you're returning something but it's this type and I'm pretty sure of it so please change it to this type.
@@ -106,13 +117,17 @@ Auto-Boxing, automatic convertion between primitive to wrapper class by means. J
 | ---- | ---- |
 | 1 | Auto Box - [Auto-boxing] |
 | 2 | auto-up, explicit down - [AutoUp and down cast]|
+
 Remember:
 Casting does not change the actual object type. Only the reference type gets changed.
 Upcasting is always safe and never fails.
 Downcasting can risk throwing a ClassCastException, so the instanceof operator is used to check type before casting.
+
 ---
+
 #
 #### Collections
+
 Collection defiend as group of objects represented as a single unit. There's two main interface or root interface in collection which is Map and Collection. 
 
 Hierarchy of collection framework(Core interfaces)
@@ -151,6 +166,7 @@ Java ArrayList uses dynamic array for storing elements. It's basically an array[
 
 
 ### Questions and answers
+
 | Question | Answer |
 | --- | --- |
 |What are the ways we can iterate over ArrayList? | There are many ways that you can iterate like for loop, forEach loop, forEachRemaining loop, using iterator|
@@ -174,6 +190,7 @@ Java ArrayList uses dynamic array for storing elements. It's basically an array[
 
 
 ## LinkedList
+
 LinkedList implements List and Deque interface. Linked List is basically about the nodes. Node will be having 3 data to hold which is previous node, next node and element it self.(i.e. data/value).
 This is quite different than array list because ArrayList works with the array[] manipulation in background while LinkedList works like dequeue in background.
 
@@ -184,6 +201,7 @@ And by doing so LinkedList has no mechanism of capacity like ArrayList.
 
 
 ### Questions and answers
+
 | Question | Answer |
 | --- | --- |
 | Why get(index) method in LinkedList? | Yes there is a method to get element at index from LinkedList. The question is why? I mean arrayList works with array[] so it's fine, here we have nodes which is interconnected with the prev and next nodes so why? Answer lies in the method's code. Once think we think about getting middle or any other element like second last element from linkList we traverse through all the elements and when our count is exact the index we passed return the element correct? Well that's not the optimal solution. So JDK guys thought about the better way of getting element from LinkedList which is nothing but dividing LinkedList in two parts and traverse from first to mid if index < size of linked list mid point else traverse other-way. [LinkedList source code] check get(index) method.|
@@ -191,6 +209,7 @@ And by doing so LinkedList has no mechanism of capacity like ArrayList.
 | Difference between singly and doubly linked list in Java | Singly linked list contains only next node while doubly link list contains both prev and next node. |
 
 ### Reference Links
+
 [How linkedList internally works]
 
 
@@ -198,6 +217,7 @@ And by doing so LinkedList has no mechanism of capacity like ArrayList.
 
 
 ## HashMap
+
 To learn about HashSet we need to learn about HashMap first, as HashSet uses HashMap internally. HashMap works using hashing mechanism. HashMap uses key, value pair to store the data. HashMap allows null as key.
 
 When we call ```hashmap.put(key, value)``` the steps it does is like this:
@@ -212,6 +232,7 @@ When we call ```hashmap.put(key, value)``` the steps it does is like this:
 And due to this reason it is very best to override equals method to find element in your HashMap.
 
 ### Reference Links:
+
 1. [HashMap internals]
 2. [Hash Collision with example]
 3. [HashMap source code]
