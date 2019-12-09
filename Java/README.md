@@ -147,6 +147,7 @@ Basic understandings:
 - The difference between Set and Map interface is that in Set we 
 have keys, whereas in Map, we have key, value pairs.
 
+
 Note here collection framework has parent Iterator interface which is usually used by us for iterating over ArrayList or any other collection and updating at the same time. Also there is another thing to note here is iterator only moves forward.
  
 ---
