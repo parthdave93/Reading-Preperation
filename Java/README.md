@@ -142,6 +142,7 @@ Basic understandings:
  - Set: It does not allow duplication. Implementation provided by frameworks are HashSet and TreeSet.
  - List: It allows duplications and elements are ordered. basic examples are ArrayList and LinkedList.
  - Queue: It allows elements to enter/remove the stack in FIFO order i.e. First in first out except PriorityQueue.
+
 - Dequeue: This on other hand allows elements to be entered/removed from both ends.
 - Map: This is different from collection and so it is not extending collection interface but it has it's own. Which is used for key value pair. It does not allow duplicates. examples are HashMap and TreeMap.
 - The difference between Set and Map interface is that in Set we 
@@ -149,8 +150,7 @@ have keys, whereas in Map, we have key, value pairs.
 
 
 Note here collection framework has parent Iterator interface which is usually used by us for iterating over ArrayList or any other collection and updating at the same time. Also there is another thing to note here is iterator only moves forward.
- 
----
+
 
 List interface is a child interface of Collection interface which inhibits ordered collection with duplication.
 ArrayList, Vector, Stack, LinkedList are implementation of List interface.
