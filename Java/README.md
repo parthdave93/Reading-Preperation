@@ -19,7 +19,7 @@ Things to note here in method overloading means method will having same name and
 
 ---
 
-#
+
 #### Access modifiers
 
 Kotlin has a little different set of modifiers than java.
@@ -35,7 +35,7 @@ Quesions might rise are:
 
 ---
 
-#
+
 #### Interfaces
 
 Interfaces are delightful structure for the developers to help multiple languages to support multilevel inheritence. Like in java if we need to have a class inherit two classes it's not possible due to ambiguous operation and so we have interface to rescue.
@@ -100,7 +100,7 @@ Quesions might rise are:
 
 ---
 
-#
+
 #### Casting
 Many times you have casted classes or objects or even cast has been done by compiler itself in order to give you best result. Casting is kind of telling machine that I know you're returning something but it's this type and I'm pretty sure of it so please change it to this type.
 There's only one rule in casting is that each individual needs to share same hierarchy.
@@ -125,7 +125,7 @@ Downcasting can risk throwing a ClassCastException, so the instanceof operator i
 
 ---
 
-#
+
 #### Collections
 
 Collection defiend as group of objects represented as a single unit. There's two main interface or root interface in collection which is Map and Collection. 
