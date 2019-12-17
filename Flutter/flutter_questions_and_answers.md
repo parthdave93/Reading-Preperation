@@ -31,6 +31,8 @@ class DummyHome extends StatelessWidget{
 #### Why Are StatefulWidget and State Separate Classes?
 State objects are long-lived, like for an example on configuration change the StatefulWidget
 
+--- 
+
 #### Explain Stateful Widget Lifecycle?
 The lifecycle has the following simplified steps:
 1. createState()
@@ -55,6 +57,8 @@ What is Hot Reload in Flutter:
 2. Hot reload compiles only updated file and sends to the device and so device preserves the state or screen with the updated values like a counter or so... While Hot restart destroys state value and sets them to their default values and so values like the counter in the sample app turns to 0. 
 3. In Hot reload just build method will get called after updating Dart virtual machine while in Hot restart screen will initialize itself again and so the state will be lost and the app widget tree needs to rebuild itself.
 4. Speed vise Hot reload takes much less time than Hot restart.
+
+--- 
 
 #### What is an Inherited Widget and list some examples?
 We are using Inherited widgets too many times without knowing like:
@@ -87,7 +91,7 @@ class Child3 extends StatelessWidget{
 Use ```InheritedModel```
 Will add Gist Link here in future.
 
-
+--- 
 #### Show, Hide and as keywrods in Dart
 as and show are two different concepts.
 
