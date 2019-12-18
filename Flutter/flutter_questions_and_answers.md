@@ -15,15 +15,16 @@ Both answer is yes, as the widget can not build it self but can handle actions l
 class DummyHome extends StatelessWidget{
  @override
  Widget build(BuildContext context) {
- return Center(
- child: RaisedButton(child: Text("button"), onPressed: (){
- print("event");
- Navigator.push(
- context,
- MaterialPageRoute(builder: (context) => DummyHome()),
- );
- },),
- );
+    return Center(
+        child: RaisedButton(child: Text("button"), onPressed: (){
+            print("event");
+            Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => DummyHome()),
+            );
+            },
+        ),
+    );
  }
 }
 ```
@@ -93,6 +94,7 @@ Will add Gist Link here in future.
 
 --- 
 #### Show, Hide and as keywrods in Dart
+[refer this link](https://stackoverflow.com/a/19723473/4029614)
 as and show are two different concepts.
 
 With as you are giving the imported library a name. It's usually done to prevent a library from polluting your namespace if it has a lot of global functions. If you use as you can access all functions and classes of said library by accessing them the way you did in your example: GoogleMap.LatLng.
@@ -108,5 +110,4 @@ With this you would be able to access everything from that library except for La
 If you want to use multiple classes with the same name you'd need to use as. You also can combine both approaches:
 
 import 'package:google_maps/google_maps.dart' as GoogleMap show LatLng;
-[refer this link](https://stackoverflow.com/a/19723473/4029614)
 
