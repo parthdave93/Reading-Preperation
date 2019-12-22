@@ -33,7 +33,7 @@ In this pattern business logic and UI, layer decisions are placed in one file an
 3. Decisions about how the current state should be represented are made in the UI declaration code. If we would have a bit more complex state code readability would decrease.
 
 ### Bloc pattern
-[Flutter patterns and bloc pattern]:<https://medium.com/flutterpub/architecting-your-flutter-project-bd04e144a8f1>
+[Flutter patterns and bloc pattern](https://medium.com/flutterpub/architecting-your-flutter-project-bd04e144a8f1)
 
 
 

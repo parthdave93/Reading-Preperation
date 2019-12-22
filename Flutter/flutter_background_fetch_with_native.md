@@ -50,7 +50,7 @@ Create a new plugin using Android-Studio or command line.
 
 >Note if you create a project via command line you might need to add below lines in your pubspec.yaml
 
-[flie link]<https://github.com/parthdave93/FlutterHeadlessView/blob/master/pubspec.yaml>
+[flie link](https://github.com/parthdave93/FlutterHeadlessView/blob/master/pubspec.yaml)
 ```YAML
 flutter:
  plugin:
@@ -61,7 +61,7 @@ This is a crucial part as this will enable flutter that this Plugin is there wit
 
 Next is to create a class in dart with static functions, so that anyone can call and initialize it.
 
-[flie link]<https://github.com/parthdave93/FlutterHeadlessView/blob/master/lib/flutter_background_plugin.dart>
+[flie link](https://github.com/parthdave93/FlutterHeadlessView/blob/master/lib/flutter_background_plugin.dart)
 ```Dart
 
 void backgroundIsolateMain(){
@@ -93,7 +93,7 @@ afterward, we added one line to ```WidgetsFlutterBinding.ensureInitialized();```
 and then we invoked method channel to initBackgroundProcess. which calls HeadlessPlugin from the native end. and onMethodCall going to be invoked ``` override fun onMethodCall(call: MethodCall, result: MethodChannel.Result)``` from which we are going to executeBackgroundIsolate which saves the callback location or should I say reference of a dart.
 
 
-[flie link]<https://github.com/parthdave93/FlutterHeadlessView/blob/master/android/src/main/kotlin/com/parthdave93/flutter_background_plugin/HealdessPlugin.kt>
+[flie link](https://github.com/parthdave93/FlutterHeadlessView/blob/master/android/src/main/kotlin/com/parthdave93/flutter_background_plugin/HealdessPlugin.kt)
 ```
 class HealdessPlugin(val context: Context) : MethodChannel.MethodCallHandler {
 
@@ -125,7 +125,7 @@ class HealdessPlugin(val context: Context) : MethodChannel.MethodCallHandler {
 }
 ```
 
-[flie link]<https://github.com/parthdave93/FlutterHeadlessView/blob/master/android/src/main/kotlin/com/parthdave93/flutter_background_plugin/UploadWorker.kt>
+[flie link](https://github.com/parthdave93/FlutterHeadlessView/blob/master/android/src/main/kotlin/com/parthdave93/flutter_background_plugin/UploadWorker.kt)
 ```
 class UploadWorker(appContext: Context, workerParams: WorkerParameters)
  : Worker(appContext, workerParams), MethodChannel.MethodCallHandler {
