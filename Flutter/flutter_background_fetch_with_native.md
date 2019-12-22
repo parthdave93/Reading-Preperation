@@ -38,12 +38,33 @@ Android/Ios basically works with the view, without view there's no app (technica
 
 And the method ```GeneratedPluginRegistrant.registerWith(this)``` is used for plugins registry. So basically it's just like linking things take an example when you request for permission fir ```MethodChannel``` will pass a message to the plugin that this is the request please take care of it.
 >Note: [MethodChannel] is a class that is used to communicate between flutter and native code. Like in React-Native we use bridges this is kind of that.
-> [read full detailed article of ```MethodChannel```]
-Read how to create a plugin in flutter for details on GeneratedPluginRegistrant.
 
+> [read full detailed article of ```MethodChannel```]
+
+[Watch how to create a plugin in flutter] for details on GeneratedPluginRegistrant.
+[A little documentation of how plugins communicates with native code] read it before going ahead because it will give bost to next things.
+
+Now that we know how to create plugin and how plugins communicate from dart to native and vice versa. Let's go ahead.
+
+Create a new plugin using Android-Studio or command line.
+
+>Note if you create a project via command line you might need to add below lines in your pubspec.yaml
+
+<script src="https://github.com/parthdave93/FlutterHeadlessView/blob/master/pubspec.yaml"></script>
+
+This is crusial part as this will enable flutter that this Plugin is there with package and you need to call this class to perform operations for that plugin.
+
+Next is to create class in dart with static functions, so that any one can call and initialize it.
+
+Reference link:
+[Headless View sample repository]
 
 
 [Background Fetch Geofencing medium article]:<https://medium.com/flutter/executing-dart-in-the-background-with-flutter-plugins-and-geofencing-2b3e40a1a124>
 [decompile apk]:<http://www.javadecompilers.com/apk>
 [ShowJava app]:<https://play.google.com/store/apps/details?id=com.njlabs.showjava&hl=en_IN>
 [read full detailed article of ```MethodChannel```]:<./flutter_method_channel.md>
+[Watch how to create a plugin in flutter]:<https://www.youtube.com/watch?v=TZRpCGQsBCw>
+[A little documentation of how plugins communicates with native code]:<./flutter_generated_plugin_registrant.md>
+
+[Headless View sample repository]:<https://github.com/parthdave93/FlutterHeadlessView>
