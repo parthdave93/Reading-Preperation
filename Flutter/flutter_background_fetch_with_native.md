@@ -36,7 +36,7 @@ Now that the library has been loaded and activity needs to start the first thing
 Android/Ios works with the view, without view there's no app (technically you can say background services but still you need to have notification running like song notification service or something). so this view is called FlutterView in flutter's context. The FlutterView will get created and at that point in the time out the main file will get executed and so is ```runApp``` method in that main function.
 > Note that as OpenGL works with ```SurfaceView``` flutter also working using this ```SurfaceView``` check [FlutterView file] for more details.
 
-And the method ```GeneratedPluginRegistrant.registerWith(this)``` is used for plugins registry. So basically it's just like linking things take an example when you request for permission fir ```MethodChannel``` will pass a message to the plugin that this is the request please take care of it.
+And the method ```GeneratedPluginRegistrant.registerWith(this)``` is used for plugins registry. So basically it's just like linking things take an example when you request for permission for ```MethodChannel``` will pass a message to the plugin that this is the request please take care of it.
 >Note: [MethodChannel] is a class that is used to communicate between flutter and native code. Like in React-Native we use bridges this is kind of that.
 
 > [read full detailed article of ```MethodChannel```]
